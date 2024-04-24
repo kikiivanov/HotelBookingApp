@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="App Logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="-12dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewCheckInDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:text="Дата на настаняване:"
+        android:textSize="18sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextCheckInDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изберете дата"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@null"
+        android:layout_below="@id/textViewCheckInDate"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textViewCheckOutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дата на напускане:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextCheckInDate"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextCheckOutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Изберете дата"
+        android:inputType="date"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@null"
+        android:layout_below="@id/textViewCheckOutDate"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textViewGuests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Брой гости:"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextCheckOutDate"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextGuests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Въведете брой гости"
+        android:inputType="number"
+        android:layout_below="@id/textViewGuests"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/buttonSearchHotels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGuests"
+        android:layout_marginTop="15dp"
+        android:text="Търсене на хотели" />
+
+</RelativeLayout>

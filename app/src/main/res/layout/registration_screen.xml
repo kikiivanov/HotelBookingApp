@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="App Logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginStart="4dp"
+        android:text="Лична информация"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Име"
+        android:inputType="text"
+        android:layout_below="@id/textViewPersonalInfo"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия"
+        android:inputType="text"
+        android:layout_below="@id/editTextFirstName"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Мобилен номер"
+        android:inputType="phone"
+        android:layout_below="@id/editTextLastName"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textViewUserData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Данни за потребителя"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTextMobileNumber"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имейл"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/textViewUserData"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Парола"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:contentDescription="App Logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="-12dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLogo"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Имейл"
+        android:inputType="text"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:hint="Парола"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нямате акаунт? Регистрирайте се тук."
+        android:gravity="center"
+        android:layout_below="@id/buttonLogin"
+        android:textColor="@android:color/holo_blue_dark"
+        android:clickable="true"/>
+
+</RelativeLayout>

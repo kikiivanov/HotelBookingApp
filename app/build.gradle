@@ -1,0 +1,43 @@
+plugins {
+    id ("com.android.application")
+}
+
+android {
+    namespace = "com.example.hotelbookingapp"
+    compileSdkVersion = 34
+    buildToolsVersion = "34.0.0"
+
+    defaultConfig {
+        applicationId = "com.example.hotelbookingapp"
+        minSdk = 24
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    tasks.withType(JavaCompile).tap {
+        configureEach {
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
+}
+
+dependencies {
+
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation ("com.google.android.material:material:1.11.0")
+    implementation ("androidx.activity:activity-ktx:1.8.2")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.4")
+    testImplementation ("androidx.benchmark:benchmark-junit4:1.2.3")
+    androidTestImplementation ("androidx.test.ext:junit-gtest:1.0.0-alpha02")
+    androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation ("com.squareup.picasso:picasso:2.71828")
+}
